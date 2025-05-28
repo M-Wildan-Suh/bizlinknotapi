@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\ArticleApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,9 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/article/{code}', [ArticleApiController::class, 'index']);
-Route::get('/article/user/{user}/{code}', [ArticleApiController::class, 'indexUser']);
-Route::get('/article/category/{category}/{code}', [ArticleApiController::class, 'indexCategory']);
-Route::get('/article/tag/{tag}/{code}', [ArticleApiController::class, 'indexTag']);
-Route::get('/article/slug/{slug}/{code}', [ArticleApiController::class, 'landingPage']);
