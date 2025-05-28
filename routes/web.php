@@ -75,8 +75,6 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/admin/user', UserController::class);
 
-    Route::resource('/admin/guardian', GuardianWebController::class);
-
     Route::resource('/admin/article', ArticleController::class);
     Route::get('/admin/article/filter/{filter}', [ArticleController::class, 'index'])->name('article.filter');
 
