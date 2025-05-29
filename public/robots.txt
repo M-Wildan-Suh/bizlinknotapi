@@ -10,6 +10,6 @@ User-agent: *
 Disallow: /admin/
 Disallow: /login
 
-Sitemap: https://bizlink.sites.id/sitemap.xml
+Sitemap: https://bizlink.pages.id/sitemap.xml
 # ---------------------------
 # END YOAST BLOCK
